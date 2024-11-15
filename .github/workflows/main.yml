@@ -3,7 +3,7 @@ name: Codes to JSON
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  run:
+  build:
     name: Encode to JSON
     runs-on: ubuntu-latest
     timeout-minutes: 2
@@ -20,4 +20,18 @@ jobs:
         run: |
           output=$(luau translation/translatecodes.luau)
 
-      
+      - name: Send JSON to file
+        uses: "DamianReeves/write-file-action@master"
+        with:
+          path: codes.json
+          write-mode: overwrite
+          contents: output
+            
+            
+      - name: Commit & Push
+        uses: Andro999b/push@v1.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          force: true
+          message: 'Overwritten by Github Actions - ${date}'
