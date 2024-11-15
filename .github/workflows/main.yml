@@ -9,17 +9,16 @@ env:
   JSON_TABLE: "{}"
 
 jobs:
-  build:
-    name: Encode to JSON
+  push:
+    name: Install Dependencies
     runs-on: ubuntu-latest
-    timeout-minutes: 2
 
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v4
+          uses: actions/checkout@v4
 
       - name: Install Luau
-        uses: EncodedVenom/install-luau@v3
+      uses: EncodedVenom/install-luau@v3
 
       - name: Get JSON
         id: get_json
@@ -27,13 +26,18 @@ jobs:
           output=$(luau translation/translatecodes.luau)
           echo "JSON_TABLE=$output" >> $GITHUB_ENV
 
+  build:
+    name: Encode to JSON
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+
+    steps:
       - name: Send JSON to file
         uses: "DamianReeves/write-file-action@master"
         with:
           path: codes.json
           write-mode: overwrite
           contents: ${{ env.JSON_TABLE }}
-            
             
       - name: Commit & Push
         uses: Andro999b/push@v1.3
