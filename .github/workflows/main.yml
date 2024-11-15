@@ -17,7 +17,8 @@ jobs:
       run: |
           output=$(luau translation/translatecodes.luau)
           echo "$output"
-    - uses: devops-actions/json-to-file@v1.0.0
-          with:
-            json: "$output"
-            filename: 'test.json'
+      uses: devops-actions/json-to-file@v1.0.0
+            with:
+              json: "$output"
+              filename: 'test.json'
+      
