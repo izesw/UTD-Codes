@@ -17,7 +17,7 @@ jobs:
 
       - name: Get JSON
         run: |
-          output=$(luau translation/translatecodes.luau)
+          output=$(luau ./translation/translatecodes.luau)
 
       - name: Send JSON to file
         uses: "DamianReeves/write-file-action@master"
