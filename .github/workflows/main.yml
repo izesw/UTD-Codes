@@ -12,7 +12,7 @@ jobs:
     - name: Install Luau
       uses: EncodedVenom/install-luau@v3
 
-    - name: Run Unit Tests
+    - name: Convert to JSON
       id: run_tests
       run: |
           output=$(luau translation/translatecodes.luau)
