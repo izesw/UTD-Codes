@@ -1,12 +1,12 @@
 name: Codes to JSON
 
-on: [push, workflow_dispatch]
+on: 
+  push:
+    paths-ignore:
+    - '**/luau-install'
 
 env:
   JSON_TABLE: "{}"
-
-paths:
-  - '**/luau-install'
 
 jobs:
   build:
