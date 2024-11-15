@@ -1,6 +1,6 @@
 name: Codes to JSON
 
-on: [push, pull_request, workflow_dispatch]
+on: [push, workflow_dispatch]
 
 jobs:
   build:
@@ -19,6 +19,7 @@ jobs:
         id: get_json
         run: |
           output=$(luau translation/translatecodes.luau)
+          echo "$output"
 
       - name: Send JSON to file
         uses: "DamianReeves/write-file-action@master"
