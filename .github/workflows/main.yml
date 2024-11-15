@@ -3,7 +3,7 @@ name: Codes to JSON
 on: 
   push:
     paths-ignore:
-    - '**/luau-install'
+    - '@luau-install'
 
 env:
   JSON_TABLE: "{}"
