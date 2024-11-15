@@ -29,11 +29,14 @@ jobs:
 
   build:
     needs: [pushbuild]
-    name: Encode to JSON
+    name: Send to JSON
     runs-on: ubuntu-latest
     timeout-minutes: 2
 
     steps:
+      - name: Checkout Project
+        uses: actions/checkout@v4
+
       - name: Send JSON to file
         uses: "DamianReeves/write-file-action@master"
         with:
