@@ -10,7 +10,6 @@ env:
 
 jobs:
   pushbuild:
-    name: Install Dependencies
     runs-on: ubuntu-latest
     timeout-minutes: 2
 
@@ -28,7 +27,6 @@ jobs:
           echo "JSON_TABLE=$output" >> $GITHUB_ENV
 
   build:
-    name: Encode to JSON
     runs-on: ubuntu-latest
     timeout-minutes: 2
 
