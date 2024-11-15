@@ -15,18 +15,12 @@ jobs:
       - name: Install Luau
         uses: EncodedVenom/install-luau@v3
 
-      - name: Get JSON
-        id: get_json
-        run: |
-          output=$(luau translation/translatecodes.luau)
-          echo "$output"
-
       - name: Send JSON to file
         uses: "DamianReeves/write-file-action@master"
         with:
           path: codes.json
           write-mode: overwrite
-          contents: $output
+          contents: ${{ luau translation/translatecodes.luau }}
             
             
       - name: Commit & Push
