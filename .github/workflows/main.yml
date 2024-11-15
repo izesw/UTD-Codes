@@ -1,0 +1,23 @@
+name: Codes to JSON
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  run:
+    name: Encode to JSON
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    
+    steps:
+    - name: Install Luau
+      uses: EncodedVenom/install-luau@v3
+
+    - name: Run Unit Tests
+      id: run_tests
+      run: |
+          output=$(luau translatecodes.luau)
+          - uses: devops-actions/json-to-file@v1.0.0
+          with:
+            json: "$output"
+            filename: 'test.json'
+    
