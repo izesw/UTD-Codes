@@ -7,7 +7,7 @@ jobs:
     name: Encode to JSON
     runs-on: ubuntu-latest
     timeout-minutes: 2
-    
+
     steps:
       - name: Checkout Project
         uses: actions/checkout@v4
@@ -15,13 +15,17 @@ jobs:
       - name: Install Luau
         uses: EncodedVenom/install-luau@v3
 
+      - name: Get JSON
+        run: |
+          output=$(luau translation/translatecodes.luau)
+
       - name: Send JSON to file
         uses: "DamianReeves/write-file-action@master"
         with:
           path: codes.json
           write-mode: overwrite
-          contents: |
-            $(luau translation/translatecodes.luau)
+          contents: $output
+            
             
       - name: Commit & Push
         uses: Andro999b/push@v1.3
