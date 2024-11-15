@@ -20,7 +20,7 @@ jobs:
         with:
           path: codes.json
           write-mode: overwrite
-          contents: ${{ luau translation/translatecodes.luau }}
+          contents: ${{ $(luau translation/translatecodes.luau) }}
             
             
       - name: Commit & Push
