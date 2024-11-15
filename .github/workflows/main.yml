@@ -5,6 +5,9 @@ on: [push, workflow_dispatch]
 env:
   JSON_TABLE: "{}"
 
+paths:
+  - '**/luau-install'
+
 jobs:
   build:
     name: Encode to JSON
