@@ -1,5 +1,5 @@
 return {
-    ["TestCode4"] = {
+    ["TestCode5"] = {
         Rewards = {
             Gems = 200,
             Coins = 500,
