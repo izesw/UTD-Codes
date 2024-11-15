@@ -9,9 +9,10 @@ env:
   JSON_TABLE: "{}"
 
 jobs:
-  push:
+  pushbuild:
     name: Install Dependencies
     runs-on: ubuntu-latest
+    timeout-minutes: 2
 
     steps:
       - name: Checkout Project
