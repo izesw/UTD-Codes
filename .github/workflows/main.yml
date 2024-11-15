@@ -15,11 +15,11 @@ jobs:
     - name: Convert to JSON
       id: run_tests
       run: |
-          output=$(luau translation/translatecodes.luau)
+          output=$(luau ./translation/translatecodes.luau)
           echo "$output"
     
     - name: Send JSON to file
       uses: devops-actions/json-to-file@v1.0.0
       with:
         json: "$output"
-        filename: 'test.json'
+        filename: './test.json'

@@ -1,4 +1,4 @@
--- local Codes = require("@codes")
--- local json = require("@json")
+local Codes = require("@codes")
+local json = require("@json")
 
-print("2")
+print(json.encode(Codes))
