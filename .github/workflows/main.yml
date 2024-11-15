@@ -16,10 +16,10 @@ jobs:
 
     steps:
       - name: Checkout Project
-      uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Install Luau
-      uses: EncodedVenom/install-luau@v3
+        uses: EncodedVenom/install-luau@v3
 
       - name: Get JSON
         id: get_json
