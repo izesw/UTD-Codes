@@ -15,6 +15,6 @@ jobs:
     - name: Convert to JSON
       id: run_tests
       run: |
-          output=$(luau @translatecodes.luau)
+          output=$(luau /translatecodes.luau)
           echo "$output"
     
