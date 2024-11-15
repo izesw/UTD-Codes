@@ -10,13 +10,6 @@ return {
             }
         },
 
-        Expiration = os.time({
-            year = 2024,
-            month = 11,
-            day = 12,
-            hour = 12,
-            min = 00,
-            sec = 0,
-        })
+        Expiration = {}
     }
 }
