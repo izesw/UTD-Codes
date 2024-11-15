@@ -5,9 +5,6 @@ on:
     paths-ignore:
     - '@luau-install'
 
-env:
-  JSON_TABLE: "{}"
-
 jobs:
   pushbuild:
     name: Install Dependencies
@@ -28,7 +25,7 @@ jobs:
         id: get_json
         run: |
           output=$(luau translation/translatecodes.luau)
-          echo "JSON_TABLE=$output" >> $GITHUB_ENV
+          echo "JSON_TABLE=$output" >> $GITHUB_OUTPUT
 
   build:
     needs: [pushbuild]
