@@ -5,10 +5,6 @@ return {
             Coins = 500,
             Rerolls = 20,
 
-            Items = {
-                Key = 20,
-            },
-
             Units = {
                 Gaara = 7,
                 ["Jinwoo:evolved"] = 7,
