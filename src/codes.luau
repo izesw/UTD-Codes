@@ -1,8 +1,8 @@
 return {
     ["CC_Code"] = {
         Rewards = {
-            Gems = 200,
-            Coins = 500,
+            Gems = 160000,
+            Coins = 1000000,
             Rerolls = 20,
 
             Units = {
