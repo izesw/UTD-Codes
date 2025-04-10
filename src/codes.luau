@@ -24,11 +24,12 @@ return {
         })
     },
 
-    ["CC_Code2"] = {
+    ["CC_Code_2"] = {
         Rewards = {
             Gems = 160000,
             Coins = 1000000,
             Rerolls = 20,
+            PlayerExperience = 19173,
 
             Units = {
                 Gaara = 7,
