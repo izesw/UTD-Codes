@@ -29,7 +29,6 @@ return {
             Gems = 160000,
             Coins = 1000000,
             Rerolls = 20,
-            PlayerExperience = 19173,
 
             Units = {
                 Gaara = 7,
@@ -49,4 +48,19 @@ return {
             sec = 0,
         })
     },
+
+    ["CC_Code_XP"] = {
+        Rewards = {
+            PlayerExperience = 19173,
+        },
+
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 12,
+            min = 0,
+            hour = 12,
+            sec = 0,
+        }) 
+    }
 }
