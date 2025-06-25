@@ -1,66 +1,18 @@
 return {
-    ["CC_Code"] = {
+    ["TestingDELAYED"] = {
         Rewards = {
-            Gems = 160000,
-            Coins = 1000000,
+            Gems = 1000,
+            Coins = 10000,
             Rerolls = 20,
-
-            Units = {
-                Gaara = 7,
-                ["Jinwoo:evolved"] = 7,
-                FastCart = 7,
-                Spade = 7,
-                Sasuke = 7,
-            }
         },
 
         Expiration = os.time({
             year = 2025,
-            month = 12,
-            day = 12,
+            month = 6,
+            day = 30,
             min = 0,
-            hour = 12,
+            hour = 0,
             sec = 0,
         })
     },
-
-    ["CC_Code_2"] = {
-        Rewards = {
-            Gems = 160000,
-            Coins = 1000000,
-            Rerolls = 20,
-
-            Units = {
-                Gaara = 7,
-                ["Jinwoo:evolved"] = 7,
-                FastCart = 7,
-                Spade = 7,
-                Sasuke = 7,
-            }
-        },
-
-        Expiration = os.time({
-            year = 2025,
-            month = 12,
-            day = 12,
-            min = 0,
-            hour = 12,
-            sec = 0,
-        })
-    },
-
-    ["CC_Code_XP"] = {
-        Rewards = {
-            PlayerExperience = 19173,
-        },
-
-        Expiration = os.time({
-            year = 2025,
-            month = 12,
-            day = 12,
-            min = 0,
-            hour = 12,
-            sec = 0,
-        }) 
-    }
 }
