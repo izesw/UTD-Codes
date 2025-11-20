@@ -18,8 +18,8 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v4
 
-      - name: Install Luau
-        uses: EncodedVenom/install-luau@v3
+      - name: Setup Luau
+        uses: ewd3v/setup-luau@v0.1.0
 
       - name: Get JSON
         id: get_json
