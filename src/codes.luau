@@ -1,5 +1,5 @@
 return {
-    ["MidIsKindaWeird"] = {
+    ["HeadlessIsBrainless"] = {
         Rewards = {
             Gems = 69,
             Coins = 420,
