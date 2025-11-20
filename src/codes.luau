@@ -1,15 +1,15 @@
 return {
-    ["TestingDELAYED"] = {
+    ["MidIsKindaWeird"] = {
         Rewards = {
-            Gems = 1000,
-            Coins = 10000,
-            Rerolls = 20,
+            Gems = 69,
+            Coins = 420,
+            Rerolls = 50,
         },
 
         Expiration = os.time({
-            year = 2025,
-            month = 6,
-            day = 30,
+            year = 2026,
+            month = 1,
+            day = 1,
             min = 0,
             hour = 0,
             sec = 0,
