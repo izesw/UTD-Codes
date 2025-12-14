@@ -1,7 +1,8 @@
 return {
-["test"] = {
+["ThankYouEA!"] = {
         Rewards = {
-            Gems = 5,
+                Gems = 2000,
+                Rerolls = 10,
         },
 
         Expiration = os.time({
@@ -9,7 +10,7 @@ return {
             month = 12,
             day = 14,
             min = 0,
-            hour = 17,
+            hour = 14,
             sec = 0,
         })
     },
