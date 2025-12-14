@@ -45,4 +45,19 @@ return {
         })
     },
 
+["40kCCU!"] = {
+        Rewards = {
+                Gems = 4000,
+                Rerolls = 40,
+        },
+
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 17,
+            min = 0,
+            hour = 12,
+            sec = 0,
+        })
+    },
 }
