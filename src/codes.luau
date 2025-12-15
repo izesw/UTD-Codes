@@ -60,4 +60,19 @@ return {
             sec = 0,
         })
     },
+
+["test2"] = {
+    Rewards = {
+                Gems = 4,
+        },
+
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 15,
+            min = 0,
+            hour = 20,
+            sec = 0,
+        })
+    },
 }
