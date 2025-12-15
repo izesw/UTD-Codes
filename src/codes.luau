@@ -120,4 +120,34 @@ return {
             sec = 0,
         })
     },
+
+["FixingBugs!"] = {
+    Rewards = {
+                Gems = 450,
+                Rerolls = 25,
+        },
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 18,
+            min = 0,
+            hour = 20,
+            sec = 0,
+        })
+    },
+
+["75kLikes!"] = {
+    Rewards = {
+                Gems = 400,
+                Rerolls = 10,
+        },
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 22,
+            min = 0,
+            hour = 20,
+            sec = 0,
+        })
+    },
 }
