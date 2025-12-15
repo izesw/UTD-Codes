@@ -61,11 +61,12 @@ return {
         })
     },
 
-["test2"] = {
+["Universal!!"] = {
     Rewards = {
-                Gems = 4,
+                Gems = 450,
+                Rerolls = 20
         },
-
+        LevelReq = 5,
         Expiration = os.time({
             year = 2025,
             month = 12,
