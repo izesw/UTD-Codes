@@ -66,7 +66,7 @@ return {
                 Gems = 450,
                 Rerolls = 15,
         },
-        LevelReq = 5,
+       
         Expiration = os.time({
             year = 2025,
             month = 12,
