@@ -61,16 +61,60 @@ return {
         })
     },
 
-["Universal!!"] = {
+["Universal!"] = {
     Rewards = {
                 Gems = 450,
-                Rerolls = 20
+                Rerolls = 15,
         },
         LevelReq = 5,
         Expiration = os.time({
             year = 2025,
             month = 12,
-            day = 15,
+            day = 22,
+            min = 0,
+            hour = 20,
+            sec = 0,
+        })
+    },
+
+["NumberOne!"] = {
+    Rewards = {
+                Gems = 500,
+                Rerolls = 15,
+        },
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 22,
+            min = 0,
+            hour = 20,
+            sec = 0,
+        })
+    },
+
+["Mainstream!"] = {
+    Rewards = {
+                Gems = 450,
+                Rerolls = 15,
+        },
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 25,
+            min = 0,
+            hour = 20,
+            sec = 0,
+        })
+    },
+["ThankYouUTD!"] = {
+    Rewards = {
+                Gems = 400,
+                Rerolls = 5,
+        },
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 22,
             min = 0,
             hour = 20,
             sec = 0,
