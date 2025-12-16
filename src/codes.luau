@@ -151,17 +151,33 @@ return {
         })
     },
 
-["testlvl"] = {
+["ThousandsOfCodes!"] = {
     Rewards = {
-                Gems = 4,
+                Gems = 800,
+                Rerolls = 15,
         },
         LevelRequirement = 10,
         Expiration = os.time({
             year = 2025,
             month = 12,
-            day = 22,
+            day = 21,
             min = 0,
             hour = 20,
+            sec = 0,
+        })
+    },
+
+["SixSeven!"] = {
+    Rewards = {
+                Rerolls = 67,
+        },
+        LevelRequirement = 10,
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 19,
+            min = 0,
+            hour = 12,
             sec = 0,
         })
     },
