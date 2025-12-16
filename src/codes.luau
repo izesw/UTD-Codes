@@ -156,6 +156,7 @@ return {
                 Gems = 800,
                 Rerolls = 15,
         },
+        LevelRequirement = 5,
         Expiration = os.time({
             year = 2025,
             month = 12,
@@ -170,6 +171,7 @@ return {
     Rewards = {
                 Rerolls = 67,
         },
+        LevelRequirement = 15,
         Expiration = os.time({
             year = 2025,
             month = 12,
@@ -179,4 +181,20 @@ return {
             sec = 0,
         })
     },
+["MaxedOut!"] = {
+    Rewards = {
+                 Gems = 600,
+                Rerolls = 10,
+        },
+        LevelRequirement = 5,
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 24,
+            min = 0,
+            hour = 12,
+            sec = 0,
+        })
+    },
+
 }
