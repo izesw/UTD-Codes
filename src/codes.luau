@@ -150,4 +150,19 @@ return {
             sec = 0,
         })
     },
+
+["testlvl"] = {
+    Rewards = {
+                Gems = 4,
+        },
+        LevelRequirement = 10,
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 22,
+            min = 0,
+            hour = 20,
+            sec = 0,
+        })
+    },
 }
