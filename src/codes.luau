@@ -196,5 +196,19 @@ return {
             sec = 0,
         })
     },
+["testEA"] = {
+    Rewards = {
+                 Gems = 6,
+        },
+        RequiresEA = true,
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 24,
+            min = 0,
+            hour = 12,
+            sec = 0,
+        })
+    },
 
 }
