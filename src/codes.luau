@@ -196,9 +196,27 @@ return {
             sec = 0,
         })
     },
-["testEA"] = {
+
+["ThankYou100k"] = {
     Rewards = {
-                 Gems = 6,
+                Rerolls = 100,
+        },
+        LevelRequirement = 50,
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 24,
+            min = 0,
+            hour = 12,
+            sec = 0,
+        })
+    },
+
+["HereyougoEA!"] = {
+    Rewards = {
+                 Gems = 2000,
+                Rerolls = 20,
+                Locks = 5,
         },
         RequiresEA = true,
         Expiration = os.time({
