@@ -182,5 +182,35 @@ return {
             sec = 0,
         })
     },
+["UnrivaledIsAlive"] = {
+        Rewards = {
+                Gems = 800,
+                Rerolls = 20,
+        },
+         LevelRequirement = 15,
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 23,
+            min = 0,
+            hour = 18,
+            sec = 0,
+        })
+    },
 
+["ThankYouFor150k"] = {
+        Rewards = {
+                Gems = 1500,
+                Rerolls = 50,
+        },
+         LevelRequirement = 50,
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 23,
+            min = 0,
+            hour = 18,
+            sec = 0,
+        })
+    },
 }
