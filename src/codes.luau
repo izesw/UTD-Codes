@@ -1,19 +1,4 @@
 return {
-["THANKYOU!"] = {
-        Rewards = {
-                Gems = 400,
-        },
-
-        Expiration = os.time({
-            year = 2025,
-            month = 12,
-            day = 19,
-            min = 0,
-            hour = 14,
-            sec = 0,
-        })
-    },
-
 ["RELEASE!"] = {
         Rewards = {
                 Gems = 400,
@@ -41,22 +26,6 @@ return {
             day = 24,
             min = 0,
             hour = 12,
-            sec = 0,
-        })
-    },
-
-["40kCCU!"] = {
-        Rewards = {
-                Gems = 4000,
-                Rerolls = 40,
-        },
-
-        Expiration = os.time({
-            year = 2025,
-            month = 12,
-            day = 15,
-            min = 0,
-            hour = 20,
             sec = 0,
         })
     },
@@ -121,21 +90,6 @@ return {
         })
     },
 
-["FixingBugs!"] = {
-    Rewards = {
-                Gems = 450,
-                Rerolls = 25,
-        },
-        Expiration = os.time({
-            year = 2025,
-            month = 12,
-            day = 18,
-            min = 0,
-            hour = 20,
-            sec = 0,
-        })
-    },
-
 ["75kLikes!"] = {
     Rewards = {
                 Gems = 400,
@@ -175,7 +129,7 @@ return {
         Expiration = os.time({
             year = 2025,
             month = 12,
-            day = 19,
+            day = 23,
             min = 0,
             hour = 12,
             sec = 0,
