@@ -213,4 +213,20 @@ return {
             sec = 0,
         })
     },
+
+["ThankYou30M"] = {
+        Rewards = {
+                Gems = 500,
+                Rerolls = 15,
+        },
+         LevelRequirement = 15,
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 26,
+            min = 0,
+            hour = 18,
+            sec = 0,
+        })
+    },
 }
