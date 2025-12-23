@@ -229,4 +229,18 @@ return {
             sec = 0,
         })
     },
+
+["YT10k!"] = {
+        Rewards = {
+                Gems = 2000,
+        },
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 26,
+            min = 0,
+            hour = 18,
+            sec = 0,
+        })
+    },
 }
