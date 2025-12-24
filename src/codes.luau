@@ -243,4 +243,19 @@ return {
             sec = 0,
         })
     },
+["MerryChristmas"] = {
+        Rewards = {
+                Rerolls = 100,
+                StatRerolls = 50,
+                Locks = 10,
+        },
+        Expiration = os.time({
+            year = 2025,
+            month = 12,
+            day = 28,
+            min = 0,
+            hour = 12,
+            sec = 0,
+        })
+    },
 }
